@@ -10,10 +10,10 @@ import javax.swing.event.*;
 import javax.swing.undo.*;
 
 @SuppressWarnings("serial")
-public class EditorGUI extends JFrame implements ActionListener {
+public class TEXT_EDITOR_GUI extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
-        new EditorGUI();
+        new TEXT_EDITOR_GUI();
     }
 
     //============================================
@@ -58,7 +58,7 @@ public class EditorGUI extends JFrame implements ActionListener {
     // CONSTRUCTOR
     //============================================
 
-    public EditorGUI() {
+    public TEXT_EDITOR_GUI() {
         super("14103070_Editor");
 
         // Create Menus
@@ -262,7 +262,7 @@ public class EditorGUI extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent event) {
         if(event.getSource() == newFile) {
-            new EditorGUI();
+            new TEXT_EDITOR_GUI();
         } else if(event.getSource() == openFile) {
             JFileChooser open = new JFileChooser();
             open.showOpenDialog(null);
